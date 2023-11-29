@@ -88,3 +88,7 @@ a:hover{
     border-top: 1px solid white;
     padding: 20px;
 }
+
+video{
+    width: 100%;
+}
