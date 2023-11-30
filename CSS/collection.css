@@ -1,0 +1,13 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .apercu-oeuvre {
+    margin: 1em;
+}
+
+main #apercu-oeuvre-template {
+    display: none;
+}
