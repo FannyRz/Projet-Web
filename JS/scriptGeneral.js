@@ -3,7 +3,7 @@ let listeOeuvres = []
 
 // Nombre de pages de données que l'on veut récupérer dans l'API
 // L'API contenant beaucoup de données, elle est divisée en plusisurs pages
-const nbPages = 4
+const nbPages = 20
 
 // Récupération des données de l'API pour le nombre de pages souhaité
 for (let page = 1; page <= nbPages; page++) {
@@ -59,8 +59,11 @@ function traitementData() {
             div.querySelector("img").src = "https://www.artic.edu/iiif/2/" + listeOeuvres[i][j].image_id
             div.querySelector("img").srcset = "https://www.artic.edu/iiif/2/" + listeOeuvres[i][j].image_id + "/full/200,/0/default.jpg"
             
-            // Ajout de la nouvelle div remplie
-            main.appendChild(div)
+            // Ajout de la nouvelle div remplie 
+            // (que si l'artiste n'est pas null, sinon il n'y a pas bcp d'info ni d'image dans l'API)
+            if (listeOeuvres[i][j].artist_title != null) {
+                main.appendChild(div)
+            }
         
             // Changement de page quand on clique sur l'oeuvre
             div.onclick = function() {
