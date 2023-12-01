@@ -1,5 +1,4 @@
 // Récupération de l'id de l'oeuvre à afficher
-// const idOeuvre = document.getElementById("")
 const idOeuvre = localStorage.getItem("idOeuvre")
 
 // URL
@@ -18,13 +17,16 @@ fetch(url)
     }
     })
     .then (function(data) { 
-        //Traitement des données
+        // Traitement des données
         console.log(data)
+        traitementData()
     })
     .catch(function (err) {
         console.log(err);
 });
 
 // Affichage des données de l'oeuvre
-const id = document.getElementById("test-id")
-id.innerText = idOeuvre
+function traitementData() {
+    const id = document.getElementById("test-id")
+    id.innerText = idOeuvre
+}
