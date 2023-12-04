@@ -3,9 +3,16 @@
     float: right;
     padding: 5rem;
 }
+main img {
+    display: none;
+}
 
  main{
     display: flex;
     align-items: center;
     justify-content: center;
  }
+main #divConteneur {
+    width: max-content;
+    padding-left: 42%;
+}

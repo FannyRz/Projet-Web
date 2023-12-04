@@ -28,7 +28,11 @@ fetch(url)
 
 // Affichage des données de l'oeuvre
 function affichageDonneesOeuvre() {
+    // Disparition du loader
+    document.getElementById("divConteneur").style.display = "none"
+
     // Affichage de l'image
+    document.querySelector("img").style.display = "block"
     document.querySelector("img").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
     document.querySelector("img").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
 
