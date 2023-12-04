@@ -1,0 +1,11 @@
+#informations{
+    text-align: left;
+    float: right;
+    padding: 5rem;
+}
+
+ main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }

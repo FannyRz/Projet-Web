@@ -35,6 +35,11 @@ function affichageDonneesOeuvre() {
     // Affichage du nom de l'oeuvre et de son artiste
     document.querySelector("h1").innerText = dataOeuvre.title
     document.querySelector("h2").innerText = dataOeuvre.artist_title
+    document.querySelector("h3").innerText = dataOeuvre.date_start
 
+    document.querySelector("p").innerText =  "\n" + "Origin : " + dataOeuvre.place_of_origin + "\n" + 
+                                            "Category : " + dataOeuvre.department_title + "\n" + 
+                                            "Material : " + dataOeuvre.medium_display + "\n" + 
+                                            "Reference : " + dataOeuvre.main_reference_number
     
 }
