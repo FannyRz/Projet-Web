@@ -1,0 +1,8 @@
+main img {
+    display: none;
+}
+
+main #divConteneur {
+    width: max-content;
+    padding-left: 42%;
+}

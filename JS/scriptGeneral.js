@@ -43,6 +43,9 @@ function affichageOeuvresRecuperees() {
     // Affichage de nos données dans la console
     console.log(listeOeuvres)
 
+    // Disparition du loader
+    document.getElementById("divConteneur").style.display = "none"
+
     // Création des éléments HTML de toutes les oeuvres
     for (let i=0; i<listeOeuvres.length; i++) {
         for (j=0; j<listeOeuvres[i].length; j++) {
