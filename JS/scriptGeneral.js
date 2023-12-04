@@ -3,8 +3,8 @@ let listeOeuvres = []
 
 // Nombre de pages de données que l'on veut récupérer dans l'API
 // L'API contenant beaucoup de données, elle est divisée en plusisurs pages
-const nbPages = 25
-const pageDebut = 15
+const nbPages = 10
+const pageDebut = 0
 
 // Récupération des données de l'API pour le nombre de pages souhaité
 for (let page = pageDebut; page <= nbPages; page++) {

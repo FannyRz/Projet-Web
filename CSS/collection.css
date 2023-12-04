@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 main .apercu-oeuvre {
@@ -10,4 +11,23 @@ main .apercu-oeuvre {
 
 main #apercu-oeuvre-template {
     display: none;
+}
+
+main .apercu-oeuvre .calque-apercu-oeuvre{
+    background-color: none;
+    transition: all 0.5s ease;
+}
+
+main .apercu-oeuvre .calque-apercu-oeuvre:hover {
+    background-color: rgba(240, 255, 255, 0.288);
+    transition: all 0.5s ease;
+}
+
+
+main .apercu-oeuvre {
+    width: 300px;
+}
+
+main .apercu-oeuvre img {
+    width: 300px;
 }
