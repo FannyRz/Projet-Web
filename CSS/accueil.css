@@ -9,8 +9,9 @@ main {
 }
 
 main .bouton {
-    margin-top: 5rem;
     width: 15rem;
+    margin: auto;
+    margin-top: 3rem;
 }
 
 main .bouton:focus {

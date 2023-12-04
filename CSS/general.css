@@ -1,4 +1,4 @@
-/* Définition des variable */
+/* Définition des variables */
 /* Pour récupérer la variable : var(--maVariable) */
 :root {
     --fond: rgb(240, 240, 240);
@@ -38,8 +38,8 @@ main {
     transition: all 0.5s ease; 
 }
 
-
-main a {
+a {
+    text-decoration: none;
     color: black;
 }
 
@@ -47,8 +47,27 @@ a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-ul {
+ul{
     list-style-type: none;
+}
+
+/******************************************** Header ********************************************/
+
+nav{
+    background-color: black;
+    padding: 2rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
 
 /******************************************** Footer ********************************************/
@@ -59,7 +78,8 @@ footer{
     display: grid;
     grid-template-columns: 3fr 3fr 1fr 3fr 3fr 3fr;
     grid-template-rows: 3fr 1fr;
-    padding-top: 2rem;
+    padding-top: 20px;
+    width: 100%;
 }
 
 footer div ul{
