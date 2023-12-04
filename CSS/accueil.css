@@ -4,9 +4,15 @@ video {
 
 main {
     text-align: center;
+    justify-content: center;
     padding: 5rem 10rem;
 }
 
-main button {
-    margin-top: 3rem;
+main .bouton {
+    margin-top: 5rem;
+    width: 15rem;
+}
+
+main .bouton:focus {
+    border: solid 3px rgb(125, 125, 125);
 }

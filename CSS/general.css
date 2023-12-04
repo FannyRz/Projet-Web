@@ -19,7 +19,7 @@ main {
     padding: 3rem 5rem;
 }
 
-button {
+.bouton {
     background-color: black;
     border: solid 2px black;
     color: white;
@@ -28,21 +28,27 @@ button {
     text-align: center;
     font-size: 15px;
     cursor: pointer;
+    display: block;
+    width: 10rem;
 }
 
-button:hover {
+.bouton:hover {
     background-color: white;
     color: black;
     transition: all 0.5s ease; 
 }
 
-a {
-    text-decoration: none;
+
+main a {
     color: black;
 }
 
 a:hover, footer a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /******************************************** Footer ********************************************/
@@ -137,3 +143,18 @@ footer #liste{
     margin-top: 15px;
 }
 
+/******************************************** Loader ********************************************/
+
+#loader {
+    border: 16px solid var(--fond); /* Light grey */
+    border-top: 16px solid black; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

@@ -26,7 +26,7 @@ for (let page = pageDebut; page <= nbPages; page++) {
             
             // Test si toutes les données ont été récupérées
             if (page == nbPages) {
-                traitementData()
+                affichageOeuvresRecuperees()
             }
         })
         .catch(function (err) {
@@ -39,7 +39,7 @@ const template = document.getElementById("apercu-oeuvre-template")
 const main = document.querySelector("main")
 
 // Fonction qui va afficher toutes les oeuvres récupérées via l'API
-function traitementData() {
+function affichageOeuvresRecuperees() {
     // Affichage de nos données dans la console
     console.log(listeOeuvres)
 

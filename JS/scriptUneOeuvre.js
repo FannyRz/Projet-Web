@@ -20,14 +20,14 @@ fetch(url)
         // Traitement des données
         console.log(data)
         dataOeuvre = data.data
-        traitementData()
+        affichageDonneesOeuvre()
     })
     .catch(function (err) {
         console.log(err);
 });
 
 // Affichage des données de l'oeuvre
-function traitementData() {
+function affichageDonneesOeuvre() {
     // Affichage de l'image
     document.querySelector("img").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
     document.querySelector("img").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
@@ -35,4 +35,6 @@ function traitementData() {
     // Affichage du nom de l'oeuvre et de son artiste
     document.querySelector("h1").innerText = dataOeuvre.title
     document.querySelector("h2").innerText = dataOeuvre.artist_title
+
+    
 }
