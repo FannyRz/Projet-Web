@@ -1,7 +1,7 @@
 // Récupération de l'id de l'oeuvre à afficher
 const idOeuvre = localStorage.getItem("idOeuvre")
 
-// URL
+// URL de notre oeuvre
 const url = 'https://api.artic.edu/api/v1/artworks/' + idOeuvre
 
 // Variable qui va récupérer nos données
@@ -19,6 +19,7 @@ fetch(url)
     .then (function(data) { 
         // Traitement des données
         console.log(data)
+        dataOeuvre = data.data
         traitementData()
     })
     .catch(function (err) {
@@ -27,6 +28,11 @@ fetch(url)
 
 // Affichage des données de l'oeuvre
 function traitementData() {
-    const id = document.getElementById("test-id")
-    id.innerText = idOeuvre
+    // Affichage de l'image
+    document.querySelector("img").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
+    document.querySelector("img").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
+
+    // Affichage du nom de l'oeuvre et de son artiste
+    document.querySelector("h1").innerText = dataOeuvre.title
+    document.querySelector("h2").innerText = dataOeuvre.artist_title
 }

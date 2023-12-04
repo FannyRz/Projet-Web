@@ -58,7 +58,8 @@ function traitementData() {
                 // Affichage du nom de l'oeuvre et de son artiste
                 let titre = listeOeuvres[i][j].title == null ? "Titre inconnu" : listeOeuvres[i][j].title
                 let artiste = listeOeuvres[i][j].artist_title == null ? "Artiste inconnu" : listeOeuvres[i][j].artist_title
-                div.querySelector("p").innerHTML = "<b>" + titre + "</b><br>" + artiste
+                div.querySelector("h1").innerText = titre
+                div.querySelector("h2").innerText = artiste
                 
                 // Affichage de l'image
                 div.querySelector("img").src = "https://www.artic.edu/iiif/2/" + listeOeuvres[i][j].image_id

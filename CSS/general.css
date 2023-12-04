@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Century Gothic', 'Helvetica', 'Arial', sans-serif;
+    transition: all ease .5s;
 }
 
 body {
