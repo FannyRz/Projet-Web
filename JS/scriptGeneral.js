@@ -4,10 +4,9 @@ let listeOeuvres = []
 // Nombre de pages de données que l'on veut récupérer dans l'API
 // L'API contenant beaucoup de données, elle est divisée en plusisurs pages
 const nbPages = 10
-const pageDebut = 0
 
 // Récupération des données de l'API pour le nombre de pages souhaité
-for (let page = pageDebut; page <= nbPages; page++) {
+for (let page = 0; page <= nbPages; page++) {
     // Changement de page dans l'URL de notre API
     let url = 'https://api.artic.edu/api/v1/artworks?page=' + page
 

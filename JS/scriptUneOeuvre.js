@@ -32,9 +32,9 @@ function affichageDonneesOeuvre() {
     document.getElementById("conteneurLoader").style.display = "none"
 
     // Affichage de l'image
-    document.querySelector("img").style.display = "block"
-    document.querySelector("img").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
-    document.querySelector("img").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
+    document.getElementById("imageOeuvre").style.display = "block"
+    document.getElementById("imageOeuvre").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
+    document.getElementById("imageOeuvre").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
 
     // Affichage du nom de l'oeuvre et de son artiste
     document.querySelector("h1").innerText = dataOeuvre.title
@@ -48,6 +48,4 @@ function affichageDonneesOeuvre() {
                                             "Technique : " + dataOeuvre.artwork_type_title + "\n" + 
                                             "Dimensions : " + dataOeuvre.dimensions + "\n" + 
                                             "Reference : " + dataOeuvre.main_reference_number
-                                            
-    
 }
