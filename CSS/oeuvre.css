@@ -19,11 +19,7 @@ main #informations {
 
 main img {
     display: none;
-    width: 25rem;
+    width: 90%;
+    max-width: 25rem;
 }
 
-@media screen and (max-width: 500px) {
-    main img {
-        width: 90%;
-    }
-}
