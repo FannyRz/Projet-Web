@@ -1,24 +1,16 @@
-#titre{
-    text-align: left;
-    position: relative;
-    background-color: black;
-    color: white;
-    padding: 2em;
-}
-
-main{
+main {
     text-align: left;
     padding-left: 20vw;
     padding-right: 20vw;
     padding-bottom: 5vh;
 }
 
-h2{
+main h1 {
     padding-top:5rem;
     padding-bottom: 2rem;
     text-align: center;
 }
 
-li{
+main li {
     padding-top: 1rem;
 }

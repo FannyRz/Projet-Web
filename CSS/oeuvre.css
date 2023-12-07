@@ -1,18 +1,29 @@
-#informations{
-    text-align: left;
-    float: right;
-    padding: 5rem;
-}
-main img {
-    display: none;
-}
-
- main{
+main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
- }
+    padding: 3rem 0rem;
+}
+
 main #divConteneur {
     width: max-content;
-    padding-left: 42%;
+    padding-left: 10%;
+}
+
+main #informations {
+    text-align: left;
+    float: right;
+    padding: 3rem;
+}
+
+main img {
+    display: none;
+    width: 25rem;
+}
+
+@media screen and (max-width: 500px) {
+    main img {
+        width: 90%;
+    }
 }
