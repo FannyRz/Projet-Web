@@ -1,5 +1,4 @@
 /* Définition des variables */
-/* Pour récupérer la variable : var(--maVariable) */
 :root {
     --fond: rgb(240, 240, 240);
 }
@@ -84,10 +83,6 @@ header a {
     color: white;
     font-size: 16px;
 }
-/* 
-header a:hover {
-    text-decoration: none;
-} */
 
 /******************************************** Footer ********************************************/
 
@@ -153,7 +148,6 @@ footer #boutonInfo {
 }
 
 footer #boutonInfo:hover { 
-    /* filter: brightness(70%); */
     background-color: black;
     border: solid 2px white;
     color: white;
@@ -185,7 +179,7 @@ footer #liste {
 
 /******************************************** Loader ********************************************/
 
-#divConteneur {
+#conteneurLoader {
     width: max-content;
 }
 
@@ -209,7 +203,7 @@ footer #liste {
 }
 
 @media screen and (max-width: 500px) {
-    #divConteneur {
+    #conteneurLoader {
         padding-left: 20%;
     }
 }

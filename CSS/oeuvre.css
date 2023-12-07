@@ -6,7 +6,7 @@ main {
     padding: 3rem 0rem;
 }
 
-main #divConteneur {
+main #conteneurLoader {
     width: max-content;
     padding-left: 10%;
 }

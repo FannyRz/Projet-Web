@@ -18,7 +18,7 @@ fetch(url)
     })
     .then (function(data) { 
         // Traitement des données
-        console.log(data)
+        console.log(data.data)
         dataOeuvre = data.data
         affichageDonneesOeuvre()
     })
@@ -29,7 +29,7 @@ fetch(url)
 // Affichage des données de l'oeuvre
 function affichageDonneesOeuvre() {
     // Disparition du loader
-    document.getElementById("divConteneur").style.display = "none"
+    document.getElementById("conteneurLoader").style.display = "none"
 
     // Affichage de l'image
     document.querySelector("img").style.display = "block"
@@ -41,9 +41,13 @@ function affichageDonneesOeuvre() {
     document.querySelector("h2").innerText = dataOeuvre.artist_title
     document.querySelector("h3").innerText = dataOeuvre.date_start
 
+    // Affichage des informations techniques
     document.querySelector("p").innerText =  "\n" + "Origin : " + dataOeuvre.place_of_origin + "\n" + 
                                             "Category : " + dataOeuvre.department_title + "\n" + 
                                             "Material : " + dataOeuvre.medium_display + "\n" + 
+                                            "Technique : " + dataOeuvre.artwork_type_title + "\n" + 
+                                            "Dimensions : " + dataOeuvre.dimensions + "\n" + 
                                             "Reference : " + dataOeuvre.main_reference_number
+                                            
     
 }

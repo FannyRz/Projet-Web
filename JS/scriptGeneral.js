@@ -44,7 +44,7 @@ function affichageOeuvresRecuperees() {
     console.log(listeOeuvres)
 
     // Disparition du loader
-    document.getElementById("divConteneur").style.display = "none"
+    document.getElementById("conteneurLoader").style.display = "none"
 
     // Création des éléments HTML de toutes les oeuvres
     for (let i=0; i<listeOeuvres.length; i++) {
