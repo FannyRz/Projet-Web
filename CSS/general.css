@@ -71,6 +71,10 @@ header nav ul li {
     padding: 2rem;
 }
 
+header nav ul li:first-of-type {
+    padding: 1rem;
+}
+
 header nav ul .menu:hover {
     background-color: var(--fond);
 }
@@ -187,8 +191,8 @@ footer #liste {
 
 @media screen and (max-width: 550px) {
     footer #liste {
-      flex-direction: column;
-      justify-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     footer #footerPremiereLigne {
@@ -197,25 +201,25 @@ footer #liste {
         justify-content: center;
     }
 
-    footer #footerTroisiemePartie ul{
+    footer #footerTroisiemePartie ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    footer #footerTroisiemePartie img{
+    footer #footerTroisiemePartie img {
         margin: 0vw 3vw;
     }
 
     footer #footerPremierePartie {
-    align-items: center;
+        align-items: center;
     }
 
 }
 
 @media screen and (max-width: 600px) {
 
-    header nav ul li{
+    header nav ul li {
         padding: 2vw;
     }
 
@@ -243,11 +247,5 @@ footer #liste {
     }
     100% { 
         transform: rotate(360deg); 
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #conteneurLoader {
-        padding-left: 20%;
     }
 }

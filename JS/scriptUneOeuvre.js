@@ -36,6 +36,9 @@ function affichageDonneesOeuvre() {
     document.getElementById("imageOeuvre").src = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id
     document.getElementById("imageOeuvre").srcset = "https://www.artic.edu/iiif/2/" + dataOeuvre.image_id + "/full/400,/0/default.jpg"
 
+    // Apparition de la div remplie d'informations
+    document.getElementById("informations").style.display = "block"
+
     // Affichage du nom de l'oeuvre et de son artiste
     document.querySelector("h1").innerText = dataOeuvre.title
     document.querySelector("h2").innerText = dataOeuvre.artist_title
