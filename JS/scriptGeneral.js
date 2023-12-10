@@ -80,14 +80,11 @@ function affichageOeuvresRecuperees() {
     }
 }
 
-//Bouton retour en haut de page
-
-// Récupération du bouton
-const mybutton = document.getElementById("boutonScroll");
+// Récupération du bouton retour en haut de page
+const boutonRetour = document.getElementById("boutonScroll");
 
 // Lorsque l'utilisateur clique sur le bouton, remonter en haut de la page
-mybutton.addEventListener('click', () => {
-
+boutonRetour.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         left:0,

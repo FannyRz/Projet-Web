@@ -34,15 +34,16 @@ main .apercu-oeuvre h2 {
     font-weight: normal;
 }
 
-main #boutonScroll {
+#boutonScroll {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#boutonScroll p {
     background: rgba(58, 57, 57, 0.187);
     border-radius:50%;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
     cursor: pointer;
-    z-index: auto;
+    width: fit-content;
 }
