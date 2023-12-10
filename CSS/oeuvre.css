@@ -23,3 +23,12 @@ main img {
     max-width: 25rem;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+main #divConteneur {
+    width: max-content;
+    padding-left: 42%;
+}

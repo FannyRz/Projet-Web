@@ -15,12 +15,12 @@
 <body>
     
     <header>
-        <a href="accueil.html"> <img id="logoBretcho" src="Ressources/logo.png" alt="Logo du Musée Bretcho"> </a>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="HTML/collection.html">Collection</a></li>
-                <li><a href="HTML/contact.html">Contact</a></li>
+                <li><a href="accueil.html"> <img id="logoBretcho" src="Ressources/logo.png" alt="Logo du Musée Bretcho"> </a> </li>
+                <li class="menu"><a href="accueil.html">Accueil</a></li>
+                <li class="menu"><a href="HTML/collection.html">Collection</a></li>
+                <li class="menu"><a href="HTML/contact.html">Contact</a></li>
             </ul>
         </nav>
         <video autoplay muted playsinline loop>      
@@ -30,60 +30,63 @@
     </header>
 
     <main>
-        <p> Bienvenue au Musée Bretcho ! Nous possédons une collection d'oeuvres d'art d'une richesse culturelle qui n'est
-            pas anodine. Vous pourrez découvrir les chefs-d'oeuvres d'artistes du monde entier. Laissez-vous guider au sein 
-            des trois étages de notre bâtiment plein d'histoire, où vous pourrez observer l'évolution de l'art au fil des siècles. 
+        <p> Bienvenue au Musée Bretcho ! Nous possédons une collection d'oeuvres d'art d'une richesse culturelle hors du commun. Vous pouvez découvrir les chefs-d'oeuvres d'artistes du monde entier. Laissez-vous guider au sein 
+            des trois étages de notre bâtiment plein d'histoire, où vous pouvez observer l'évolution de l'art au fil des siècles. 
             Le Musée Bretcho a par ailleurs été élu par Tripadvisor parmi les meilleures attractions culturelles de 2023 en France.
         </p>
         <a href="HTML/collection.html" id='boutonVoirPlus' class="bouton"> Découvrir la collection </a>
     </main>
 
     <footer>
-        <section id = "footerPremierePartie">
-            <a class = "footerLienGras" href="accueil.html"> Musée Bretcho </a>
-            <p> Arrêt "musée Bretcho"
-                <br>
-                Parking Bruno Lechaud
-            </p>
-            <p> HORAIRES </p>
-            <p>  Du lundi au samedi de 10h00 à 19h00 
-                <br>
-                Nocturne jusqu'a 23h le 1<sup>er</sup> mardi du mois
-            </p>
-            <a href="HTML/contact.html" id = 'boutonInfo' class="bouton"> Nous contacter </a> 
-        </section>
-        <section id = "footerDeuxiemePartie">
-            <ul>
-                <li> <a  class = "footerLienGras" href="#"> Agenda </a> </li>
-                <li> <a  class = "footerLienGras" href="#"> Expositions </a> </li>
-                <li> <a  class = "footerLienGras" href='HTML/collection.html'> Collections </a> </li>
-                <li> <a  class = "footerLienGras" href="#"> Billetterie </a> </li>
-            </ul>
-            <ul>
-                <li> <a class = "footerLienBasique" href="#"> Espace presse </a> </li>
-                <li> <a class = "footerLienBasique" href="#"> Entreprise </a> </li>
-                <li> <a class = "footerLienBasique" href="#"> Horaires </a> </li>
-                <li> <a class = "footerLienBasique" href="#"> Accès </a> </li>
-                <li> <a class = "footerLienBasique" href="#"> FAQ </a> </li>
-            </ul>
-        </section>
-        <section id = "footerTroisiemePartie">
-            <ul>
-                <li> <a href='https://fr-fr.facebook.com/login.php'> <img class="icon" src="Ressources/icon-facebook.png"> </a> </li>
-                <li> <a href='https://www.instagram.com/'> <img class="icon" src="Ressources/icon-insta.png"> </a> </li>
-                <li> <a href='https://www.youtube.com/?gl=FR&hl=fr'> <img class="icon" src="Ressources/icon-youtube.png"> </a> </li>
-                <li> <a href='https://fr.linkedin.com/'> <img class="icon" src="Ressources/icon-linkedin.png"> </a> </li>
-            </ul>
-        </section>
-        <section id = "footerQuatriemePartie">
-            <ul id="liste">
-                <li> <a class = "footerLienPetit" href="#"> Mentions légales </a> </li>
-                <li> <a class = "footerLienPetit" href="#"> Données personnelles </a> </li>
-                <li> <a class = "footerLienPetit" href="#"> Cookies </a> </li>
-                <li> <a class = "footerLienPetit" href="#"> Marchés publics </a> </li>
-                <li> <a class = "footerLienPetit" href="#"> Crédits photographiques </a> </li>
-            </ul>
-        </section>
+        <div id = "footerPremiereLigne">
+            <section id = "footerPremierePartie">
+                <a class = "footerLienGras" href="accueil.html"> Musée Bretcho </a>
+                <p> Arrêt "musée Bretcho"
+                    <br>
+                    Parking Bruno Lechaud
+                </p>
+                <p> HORAIRES </p>
+                <p>  Du lundi au samedi de 10h00 à 19h00 
+                    <br>
+                    Nocturne jusqu'a 23h le 1<sup>er</sup> mardi du mois
+                </p>
+                <a href="HTML/contact.html" id = 'boutonInfo' class="bouton"> Nous contacter </a> 
+            </section>
+            <section id = "footerDeuxiemePartie">
+                <ul>
+                    <li> <a  class = "footerLienGras" href="#"> Agenda </a> </li>
+                    <li> <a  class = "footerLienGras" href="#"> Expositions </a> </li>
+                    <li> <a  class = "footerLienGras" href='HTML/collection.html'> Collections </a> </li>
+                    <li> <a  class = "footerLienGras" href="#"> Billetterie </a> </li>
+                </ul>
+                <ul>
+                    <li> <a class = "footerLienBasique" href="#"> Espace presse </a> </li>
+                    <li> <a class = "footerLienBasique" href="#"> Entreprise </a> </li>
+                    <li> <a class = "footerLienBasique" href="#"> Horaires </a> </li>
+                    <li> <a class = "footerLienBasique" href="#"> Accès </a> </li>
+                    <li> <a class = "footerLienBasique" href="#"> FAQ </a> </li>
+                </ul>
+            </section>
+            <section id = "footerTroisiemePartie">
+                <ul>
+                    <li> <a href='https://fr-fr.facebook.com/login.php'> <img class="icon" src="Ressources/icon-facebook.png"> </a> </li>
+                    <li> <a href='https://www.instagram.com/'> <img class="icon" src="Ressources/icon-insta.png"> </a> </li>
+                    <li> <a href='https://www.youtube.com/?gl=FR&hl=fr'> <img class="icon" src="Ressources/icon-youtube.png"> </a> </li>
+                    <li> <a href='https://fr.linkedin.com/'> <img class="icon" src="Ressources/icon-linkedin.png"> </a> </li>
+                </ul>
+            </section>
+        </div>
+        <div id ="footerDeuxiemeLigne">
+            <section id = "footerQuatriemePartie">
+                <ul id="liste">
+                    <li> <a class = "footerLienPetit" href="#"> Mentions légales </a> </li>
+                    <li> <a class = "footerLienPetit" href="#"> Données personnelles </a> </li>
+                    <li> <a class = "footerLienPetit" href="#"> Cookies </a> </li>
+                    <li> <a class = "footerLienPetit" href="#"> Marchés publics </a> </li>
+                    <li> <a class = "footerLienPetit" href="#"> Crédits photographiques </a> </li>
+                </ul>
+            </section>
+        </div>
     </footer>
 
 </body>
